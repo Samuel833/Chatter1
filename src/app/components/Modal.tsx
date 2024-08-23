@@ -6,11 +6,11 @@ interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
   onSubmit: () => void;
-  title: string;
+  title?: string;
   body: string | JSX.Element;
   footer?: string | JSX.Element;
-  actionLabel: string;
-  deactionLabel: string;
+  actionLabel?: string;
+  deactionLabel?: string;
   disabled: boolean;
 }
 

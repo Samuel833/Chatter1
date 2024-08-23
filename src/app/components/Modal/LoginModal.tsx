@@ -115,14 +115,11 @@ const LoginModal: React.FC = () => {
   return (
     <Modal
       disabled={false}
-      title="Log In"
-      actionLabel=""
-      deactionLabel=""
       isOpen={loginModal.isOpen}
       onClose={loginModal.onClose}
       onSubmit={(() => console.log('login successfully'))}
       body={
-        <div className="flex justify-center items-center min-h-screen p-4 bg-white">
+        <div className="flex justify-center items-center overflow-y-auto p-4 bg-white">
           <form
            onSubmit={handleSubmit}
             className="bg-white border border-gray-300 rounded-lg shadow-lg px-8 py-10 w-full max-w-md"

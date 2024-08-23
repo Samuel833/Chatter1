@@ -55,7 +55,7 @@ export async function POST(req: NextRequest, { params }: { params: { title: stri
 
 export async function GET(req: NextRequest, { params }: { params: { title: string } }) {
   const { title } = params;
-console.log('here')
+// console.log('here')
   if (!title) {
     return NextResponse.json({ message: 'Title is required' }, { status: 400 });
   }

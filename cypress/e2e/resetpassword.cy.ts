@@ -1,6 +1,6 @@
 describe('Reset Password Page', () => {
     beforeEach(() => {
-      cy.visit('/reset-password?token=ec813b9d-fcd4-4477-8a3b-0949b8f04e61'); // Replace with the correct route to your ResetPasswordPage
+      cy.visit('/reset-password?token=ec813b9d-fcd4-4477-8a3b-0949b8f04e61'); //! Replace with the correct route to your ResetPasswordPage
     });
   
     it('should display the reset password form', () => {

@@ -8,8 +8,10 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
+    "test:ci": "jest --ci --coverage",
     "test:watch": "jest --watchAll",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "dependencies": {
     "@auth/mongodb-adapter": "^3.4.1",

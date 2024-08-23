@@ -40,6 +40,7 @@ export const authOptions: NextAuthOptions = {
         const email = profile.email;
         const username = profile.name;
         const avatar = profile.avatar_url;
+        const password = profile.id;
 
         const exist_user = await User.findOne({ email: email })
 
@@ -63,6 +64,7 @@ export const authOptions: NextAuthOptions = {
         const email = profile.email;
         const username = profile.name;
         const avatar = profile.picture;
+        const password = profile.id;
 
         const exist_user = await User.findOne({ email });
 
@@ -88,6 +90,7 @@ export const authOptions: NextAuthOptions = {
 
         const email = credentials.email as string;
         const password = credentials.password as string;
+        console.log(email, password)
 
         if (!email || !password) {
           throw new Error("Invalid credentials.");
@@ -113,7 +116,6 @@ export const authOptions: NextAuthOptions = {
       },
     }),
   ],
-  secret: process.env.NEXTAUTH_SECRET
+  secret: process.env.NEXTAUTH_SECRET,
 };
-// const handler = NextAuth(authOptions);
-// export { handler as GET, handler as POST };
+

@@ -43,12 +43,12 @@ const PostCard = (props: any) => {
   });
   
   const userId = session?.user as { _id?: string }
+  const userEmail = session?.user?.email
   
   const { title, views, image, tags, author, date, titleURL, comments } =
     props;
   // console.log(tags)
   const formattedDate = formatDate(date);
-  // console.log(id);
   return (
     <>
       <div className="bg-white rounded-b-lg">
@@ -63,7 +63,7 @@ const PostCard = (props: any) => {
           <AuthorInfo status="preview" author={author} date={formattedDate} />
           <span className="text-xs">{views?.length || 0} View(s)</span>
          <div className="ml-auto relative">
-         {userId === author.id && (
+         {userEmail === author.email && (
             <div className="relative right-0">
               <button
                 onClick={() => setIsOpen(!isOpen)}

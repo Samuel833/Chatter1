@@ -24,8 +24,8 @@
     margin: 1rem auto;
   }
   .markdown-preview video{
-    min-width: 20rem;
-    max-width: 40rem;
+    /* min-width: 20rem; */
+    width: 100%;
     height: 20rem;
     margin: auto;
   }
@@ -37,11 +37,17 @@
     .container {
       max-width: 768px !important;
     }
+    .markdown-preview video{
+      width: 320px;
+    }
   }
   @media (min-width: 1280px) {
   
     .container {
       max-width: 768px !important;
+    }
+    .markdown-preview video{
+      width: 320px;
     }
   }
 }

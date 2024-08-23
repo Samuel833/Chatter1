@@ -34,3 +34,21 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+# Welcome To Chatter
+
+## What we offer here
+
+- Chatter provides a rich text editor, allowing users to create and publish content easily.
+- Users can write blog posts or any other content and add images or videos to enhance their content. 
+- Chatter provides a personalized feed based on the user's interests and reading history, making it easier for users to discover new content. 
+-  Users can also browse, search and filter for other user’s content.
+-  Users can explore different categories and tags to find content that interests them.
+-  Chatter provides social features like commenting and liking that allow users to interact with each other and engage in discussions.
+-   Users can see how many views, likes, and comments their content has received and how many users have bookmarked it
+-   User  can also change their password and update their profile
+
+Here's a link to the project [here](https://nextjs-chatter-teal.vercel.app)
+
+# ENJOY!

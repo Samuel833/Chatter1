@@ -24,8 +24,8 @@ function LoginPage() {
     setLoginInProgress(true);
 
     const formData = new FormData(e.currentTarget);
-    const email = formData.get("email");
-    const password = formData.get("password");
+    const email = formData.get("email") as string;
+    const password = formData.get("password") as string;
 
     console.log(email, password)
 
@@ -36,6 +36,7 @@ function LoginPage() {
     });
 
     if (signinResponse?.error) {
+      console.log(signinResponse.error);
       setError(signinResponse.error as string);
       setLoginInProgress(false);
       return;
