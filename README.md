@@ -49,6 +49,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 -   Users can see how many views, likes, and comments their content has received and how many users have bookmarked it
 -   User  can also change their password and update their profile
 
-Here's a link to the project [here](https://nextjs-chatter-teal.vercel.app)
-
-# ENJOY!
+Here's a link to the project [here](https://chatter1-tau.vercel.app)
